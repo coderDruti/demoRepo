@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="IndexStyles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1><a href="Index.html"> Druti Bose</a></h1>
+      <div class="locators">
+        <a href="#about" target="_self" class="nav-link">About Me</a>
+        <a href="#My_Educational_Background" target="_self" class="nav-link"
+          >My Educational Background</a
+        >
+        <a href="#My_skills" target="_self" class="nav-link">My Skills</a>
+        <a href="#contact" target="_self" class="nav-link">Contact Me</a>
+      </div>
+    </nav>
+    <button class="burger-menu" id="burger-menu">Click to see menu</button>
+    <div class="main">
+      <section class="about_me" id="about">
+        <img src="programmer.png" />
+        <div id="about">
+          <h3>About Me</h3>
+          <p class="about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut modi
+            ipsam, esse hic rem unde suscipit tempora, error quae, nesciunt
+            officiis sit possimus quas tenetur eius aperiam fugiat temporibus
+            maxime.
+          </p>
+        </div>
+      </section>
+      <div class="Education" id="My_Educational_Background">
+        <h3>My Educational Background</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Qualification</th>
+              <th>Institute</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BTech</td>
+              <td>Netaji Subhash Engineering College</td>
+              <td>6.76 (SGPA)</td>
+            </tr>
+            <tr>
+              <td>Higher Secondary</td>
+              <td>Delhi Public School, Ruby Park, Kolkata</td>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <td>Secondary</td>
+              <td>G. D. Birla Centre for Education</td>
+              <td>95.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <section class="skills" id="My_skills">
+        <h3 class="skills">My Skills</h3>
+        <div class="skills">
+          <img src="html-icon.png" alt="html" class="skills" />
+
+          <img src="css.jpg" alt="css" class="skills" />
+
+          <img src="js.png" alt="javascript" class="skills" />
+
+          <img src="java.png" alt="java" class="skills" />
+
+          <img src="cpp.png" alt="c++" class="skills" />
+
+          <img src="c.png" alt="c" class="skills" />
+
+          <img src="py.jpg" alt="python" class="skills" />
+        </div>
+      </section>
+      <div id="contact">
+        <h3>Contact Me</h3>
+        <form>
+          <ul>
+            <li>
+              <input
+                type="text"
+                placeholder="Name"
+                id="Name"
+                autocomplete="name"
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                placeholder="Email"
+                id="Email"
+                autocomplete="email"
+              />
+            </li>
+            <li><input type="text" placeholder="Subject" id="Subject" /></li>
+            <li>
+              <textarea
+                rows="4"
+                cols="50"
+                placeholder="Write your email here"
+                id="text"
+              ></textarea>
+            </li>
+            <li><button type="submit">Submit mail</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script>
+      const nav = document.querySelector("nav");
+      const div = document.querySelector("nav div");
+      const navLink = document.querySelectorAll(".nav-link");
+      const burger = document.querySelector("button");
+
+      burger.addEventListener("click", () => {
+        div.classList.add("show");
+        nav.style.display = "";
+      });
+      navLink.forEach((link) =>
+        link.addEventListener("click", function () {
+          div.classList.remove("show");
+          nav.style.display = "none";
+        })
+      );
+    </script>
+  </body>
+</html>

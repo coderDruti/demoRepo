@@ -1,0 +1,132 @@
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: aliceblue;
+  height: 10px;
+}
+nav div {
+  position: fixed;
+  flex-direction: row;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+}
+nav div a {
+  margin: 8px;
+  text-decoration: none;
+  color: black;
+}
+nav h1 a {
+  text-decoration: none;
+  color: black;
+}
+.burger-menu {
+  display: block;
+}
+.show {
+  transform: translateX(42%);
+  transition: transform 0.5s ease-in-out;
+}
+button.burger-menu {
+  left: 90%;
+  position: fixed;
+  z-index: 1;
+  height: 20px;
+}
+div.main {
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+}
+section.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#about {
+  background-color: rgb(199, 224, 246);
+  box-shadow: 7px 10px 5px rgba(42, 49, 59, 0.1);
+  padding: 10px;
+  margin-left: 450px;
+  margin-right: 100px;
+  width: 500px;
+}
+p.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 5px;
+}
+table {
+  text-align: center;
+  margin-left: 500px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+table,
+th,
+td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(199, 224, 246);
+}
+.skills {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+h3.skills {
+  margin-top: 100px;
+}
+div.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 7px 10px 5px rgba(42, 49, 59, 0.1);
+}
+img.skills {
+  height: 100px;
+  width: 100px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form ul {
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+#Name,
+#Email,
+#Subject,
+#text {
+  margin: 10px;
+  border-width: 1px;
+  border-color: rgb(199, 224, 246);
+  border-style: groove;
+  text-align: center;
+  justify-content: center;
+  color: rgb(199, 224, 246);
+  box-shadow: 7px 10px 5px rgba(42, 49, 59, 0.1);
+}
+button {
+  background-color: rgb(199, 224, 246);
+  height: 40px;
+  box-shadow: 7px 10px 5px rgba(42, 49, 59, 0.1);
+}
+button:hover {
+  background-color: whitesmoke;
+}
