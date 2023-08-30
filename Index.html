@@ -120,7 +120,7 @@
       const burger = document.querySelector("button");
 
       burger.addEventListener("click", () => {
-        div.classList.add("show");
+        div.classList.toggle("show");
         nav.style.display = "";
       });
       navLink.forEach((link) =>
